@@ -30,8 +30,8 @@ export node_name="master-01 master-02 master-03" #主机名 自定义,以空格�
 export node_pass="123456 123456 123456" #每台服务器的root密码,以空格分割
 export apiserver_vip="192.168.20.240"#高可用IP 注意此ip要没有被占用
 export apiserver_vip_port="4443"
-export flaneld_interface="ens33" #注意这个网卡名
-export vip_interface="ens33"
+export flaneld_interface="ens33" #你的网卡
+export vip_interface="ens33" #你的网卡
 export haproxy_name="admin"
 export haproxy_pass="123456"
 export haproxy_status_port="8000"
@@ -171,3 +171,6 @@ node-2    Ready     <none>    34s       v1.10.4
 - 多版本可选
 - 更多扩展插件
 - 使用脚本可自动化管理集群
+
+
+**因为时间紧迫许多判断条件没有添加以后会陆续完善希望与大家积极提交**
