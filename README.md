@@ -130,6 +130,39 @@ export flaneld_interface="ens33"
 
 **脚本执行完后会打打印出如下信息：**
 
+```
+---------------- flanneld --------------------------------
+192.168.20.172::node-1
+   Active: active (running) since 三 2018-11-28 18:28:34 CST; 26s ago
+192.168.20.54::node-2
+   Active: active (running) since 三 2018-11-28 18:28:37 CST; 25s ago
+ ---------------- docker --------------------------------
+192.168.20.172::node-1
+   Active: active (running) since 三 2018-11-28 18:28:38 CST; 24s ago
+192.168.20.54::node-2
+   Active: active (running) since 三 2018-11-28 18:28:42 CST; 21s ago
+ ---------------- kubelet --------------------------------
+192.168.20.172::node-1
+   Active: active (running) since 三 2018-11-28 18:28:52 CST; 11s ago
+192.168.20.54::node-2
+   Active: active (running) since 三 2018-11-28 18:28:54 CST; 10s ago
+ ---------------- kube-proxy --------------------------------
+192.168.20.172::node-1
+   Active: active (running) since 三 2018-11-28 18:28:59 CST; 5s ago
+192.168.20.54::node-2
+   Active: active (running) since 三 2018-11-28 18:29:00 CST; 5s ago
+```
+**测试：**
+
+```
+[root@localhost k8s-install]# bash
+[root@master-01 k8s-install]# source /etc/profile
+[root@master-01 k8s-install]# kubectl get nodes
+NAME      STATUS    ROLES     AGE       VERSION
+node-1    Ready     <none>    35s       v1.10.4
+node-2    Ready     <none>    34s       v1.10.4
+[root@master-01 k8s-install]#
+```
 <br/>
 <br/>
 
