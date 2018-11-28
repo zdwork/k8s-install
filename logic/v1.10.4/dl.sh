@@ -4,7 +4,7 @@ yum -y install wget
 #client dl
 while true
 do
-sleep 0.5
+sleep 2
 test -e ./source/kubernetes-client-linux-amd64.tar.gz
   if [[ $? != 0 ]]; then
     wget -P ./source/ https://dl.k8s.io/v1.10.4/kubernetes-client-linux-amd64.tar.gz
@@ -22,7 +22,7 @@ done
 #server dl
 while true
 do
-sleep 0.5
+sleep 2
 test -e ./source/kubernetes-server-linux-amd64.tar.gz
   if [[ $? != 0 ]]; then
     wget -P ./source/ https://dl.k8s.io/v1.10.4/kubernetes-server-linux-amd64.tar.gz
@@ -40,7 +40,7 @@ done
 #docker dl
 while true
 do
-sleep 0.5
+sleep 2
 test -e ./source/docker-18.03.1-ce.tgz
   if [[ $? != 0 ]]; then
     wget -P ./source/ https://download.docker.com/linux/static/stable/x86_64/docker-18.03.1-ce.tgz
