@@ -1,5 +1,5 @@
 #!/bin/bash
-#yum -y install wget
+yum -y install wget
 
 #client dl
 while true
