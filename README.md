@@ -1,6 +1,7 @@
 ### **安装案例：**
 系统：Centos<br/>
-三台Master两台Node，用户名root,密码均为123456 
+可以多台Master多台Node<br/>
+此案例使用三台Master两台Node，用户名root,密码均为123456 
 ```
 master	192.168.20.183
 master	192.168.20.96
