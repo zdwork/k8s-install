@@ -1,6 +1,6 @@
 ### **安装案例：**
 系统：Centos<br/>
-可以多台Master（Master不能低于3台）多台Node<br/>
+可以多台Master，多台Node （注意Master不能低于3台！）<br/>
 此案例使用三台Master两台Node，用户名root,密码均为123456 
 ```
 master	192.168.20.183
@@ -23,7 +23,7 @@ cd k8s-install
 ```
 #!/bin/bash
 #User-defined information
-export node=3 #集群数量
+export node=3 #Master数量！！
 export node_ip="192.168.20.183 192.168.20.96 192.168.20.171" #服务器的ip,以空格分割
 export node_name="master-01 master-02 master-03" #主机名 自定义,以空格分割
 export node_pass="123456 123456 123456" #每台服务器的root密码,以空格分割
@@ -114,7 +114,7 @@ etcd-0               Healthy   {"health":"true"}
 #!/bin/bash
 
 #User-defined information
-export node=2
+export node=2 #Node数量！！
 export node_ip="192.168.20.172 192.168.20.54"
 export node_name="node-1 node-2"
 export node_pass="123456 123456"
