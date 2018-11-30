@@ -1,7 +1,8 @@
 ### **安装案例：**
 系统：Centos<br/>
 可以多台Master，多台Node （注意Master不能低于3台！）<br/>
-此案例使用三台Master两台Node，用户名root,密码均为123456 
+此案例使用三台Master两台Node，用户名root,密码均为123456 <br/>
+脚本在master-01上执行
 ```
 master	192.168.20.183
 master	192.168.20.96
