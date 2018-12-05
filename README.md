@@ -162,8 +162,10 @@ node-1    Ready     <none>    35s       v1.10.4
 node-2    Ready     <none>    34s       v1.10.4
 [root@master-01 k8s-install]#
 ```
+安装完后最好重启下所有服务器
 <br/>
 <br/>
+
 
 **以后会持续更新将新增加以下功能：**
 - 支持多系统安装
