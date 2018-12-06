@@ -125,9 +125,9 @@ if [[ $master_install == 1 ]]; then
   ./logic/v1.10.4/master/etcd.sh
   ./logic/v1.10.4/master/kubectl.sh
   ./logic/v1.10.4/master/flanneld.sh
+  ./logic/v1.10.4/master/apiserver.sh
   ./logic/v1.10.4/master/haproxy.sh
   ./logic/v1.10.4/master/keepalived.sh
-  ./logic/v1.10.4/master/apiserver.sh
   ./logic/v1.10.4/master/controller_manager.sh
   ./logic/v1.10.4/master/scheduler.sh
 fi
