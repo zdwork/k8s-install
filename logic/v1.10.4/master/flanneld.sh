@@ -75,9 +75,13 @@ done
 
 for ip in ${node_ip}
 do
-  ssh root@${ip} "systemctl daemon-reload && systemctl enable flanneld && systemctl start flanneld"
+  ssh root@${ip} "systemctl daemon-reload && systemctl enable flanneld && systemctl restart flanneld"
 done
 
+for ip in ${node_ip}
+do
+  ssh root@${ip} "systemctl restart flanneld"
+done
 
 #check
 sleep 5
