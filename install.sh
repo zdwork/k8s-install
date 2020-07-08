@@ -26,7 +26,7 @@ while :; do echo
         fi
       done
 
-      #install CorDns
+      #install CoreDns
       while :; do echo
         read -p "Whether to install the CoreDns plug-in? [y/n]: " CoreDns_yn
         if [[ ! $CoreDns_yn =~ ^[y,n]$ ]]; then
